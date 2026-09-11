@@ -1,11 +1,11 @@
 {
- "dataAsOf": "Fri, Sep 11, 2026 \u00b7 2 PM ET",
+ "dataAsOf": "Fri, Sep 11, 2026 \u00b7 4 PM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
    "k": "TODAY\u2019S MORTGAGE RATE",
    "sub": "30-yr fixed \u00b7 Mortgage News Daily \u00b7 12-mo high",
-   "v": "7.08",
+   "v": "7.12",
    "unit": "%",
    "hot": false
   },
@@ -32,9 +32,9 @@
   }
  ],
  "rateChart": {
-  "latest": "7.08%",
-  "latestLabel": "TODAY: 7.08%",
-  "asOf": "Sep 11, 2 PM ET",
+  "latest": "7.12%",
+  "latestLabel": "TODAY: 7.12%",
+  "asOf": "Sep 11, 4 PM ET",
   "series": [
    [
     "2025-09-03",
@@ -266,7 +266,7 @@
    ],
    [
     "2026-09-11",
-    7.08
+    7.12
    ]
   ],
   "events": [
@@ -350,13 +350,13 @@
    },
    {
     "k": "12-MO HIGH",
-    "v": "7.08%",
+    "v": "7.12%",
     "s": "NOW",
     "rd": true
    },
    {
     "k": "12-MO CHANGE",
-    "v": "+0.59",
+    "v": "+0.63",
     "s": "POINTS",
     "rd": false
    }
@@ -440,9 +440,9 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "Rates are at a 12-month high \u2014 7.08% \u2014 with the inflation report today.",
+   "line": "Rates are at a 12-month high \u2014 7.12% \u2014 with the inflation report today.",
    "flips": [
-    "<b>7.08%</b> \u2014 up 0.11 today (Mortgage News Daily).",
+    "<b>7.12%</b> \u2014 up 0.15 today (Mortgage News Daily).",
     "<b>Today:</b> the inflation report decides the Fed."
    ]
   },
