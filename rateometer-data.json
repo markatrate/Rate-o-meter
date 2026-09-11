@@ -1,0 +1,434 @@
+{
+ "dataAsOf": "Wed, Sep 9, 2026 \u00b7 evening",
+ "numTag": "LIVE \u00b7 AUTO-UPDATED",
+ "bigNums": [
+  {
+   "k": "TODAY\u2019S MORTGAGE RATE",
+   "sub": "30-yr fixed \u00b7 Mortgage News Daily \u00b7 12-mo high",
+   "v": "6.97",
+   "unit": "%",
+   "hot": false
+  },
+  {
+   "k": "THE FED\u2019S RATE",
+   "sub": "Steady since Dec \u201925",
+   "v": "3.50\u20133.75",
+   "unit": "%",
+   "hot": false
+  },
+  {
+   "k": "10-YR TREASURY",
+   "sub": "What mortgage rates track",
+   "v": "4.81",
+   "unit": "%",
+   "hot": false
+  },
+  {
+   "k": "ODDS THE FED RAISES RATES",
+   "sub": "Sep 16 \u00b7 CME FedWatch",
+   "v": "60",
+   "unit": "%",
+   "hot": true
+  }
+ ],
+ "rateChart": {
+  "latest": "6.97%",
+  "latestLabel": "TODAY: 6.97%",
+  "asOf": "Sep 9, 3 PM ET",
+  "series": [
+   [
+    "2025-09-03",
+    6.49
+   ],
+   [
+    "2025-09-10",
+    6.45
+   ],
+   [
+    "2025-09-17",
+    6.28
+   ],
+   [
+    "2025-09-24",
+    6.35
+   ],
+   [
+    "2025-10-01",
+    6.24
+   ],
+   [
+    "2025-10-08",
+    6.16
+   ],
+   [
+    "2025-10-15",
+    6.29
+   ],
+   [
+    "2025-10-22",
+    6.35
+   ],
+   [
+    "2025-10-29",
+    6.3
+   ],
+   [
+    "2025-11-05",
+    6.23
+   ],
+   [
+    "2025-11-12",
+    6.17
+   ],
+   [
+    "2025-11-19",
+    6.27
+   ],
+   [
+    "2025-11-26",
+    6.35
+   ],
+   [
+    "2025-12-03",
+    6.3
+   ],
+   [
+    "2025-12-10",
+    6.32
+   ],
+   [
+    "2025-12-17",
+    6.27
+   ],
+   [
+    "2025-12-24",
+    6.28
+   ],
+   [
+    "2025-12-31",
+    6.23
+   ],
+   [
+    "2026-01-07",
+    6.2
+   ],
+   [
+    "2026-01-14",
+    6.19
+   ],
+   [
+    "2026-01-21",
+    5.98
+   ],
+   [
+    "2026-01-28",
+    6.1
+   ],
+   [
+    "2026-02-04",
+    6.19
+   ],
+   [
+    "2026-02-11",
+    6.16
+   ],
+   [
+    "2026-02-18",
+    6.09
+   ],
+   [
+    "2026-02-25",
+    5.99
+   ],
+   [
+    "2026-03-04",
+    6.01
+   ],
+   [
+    "2026-03-11",
+    6.1
+   ],
+   [
+    "2026-03-18",
+    6.27
+   ],
+   [
+    "2026-03-25",
+    6.3
+   ],
+   [
+    "2026-04-01",
+    6.3
+   ],
+   [
+    "2026-04-08",
+    6.3
+   ],
+   [
+    "2026-04-15",
+    6.3
+   ],
+   [
+    "2026-04-22",
+    6.25
+   ],
+   [
+    "2026-04-29",
+    6.36
+   ],
+   [
+    "2026-05-06",
+    6.47
+   ],
+   [
+    "2026-05-13",
+    6.58
+   ],
+   [
+    "2026-05-20",
+    6.57
+   ],
+   [
+    "2026-05-27",
+    6.66
+   ],
+   [
+    "2026-06-03",
+    6.74
+   ],
+   [
+    "2026-06-10",
+    6.61
+   ],
+   [
+    "2026-06-17",
+    6.59
+   ],
+   [
+    "2026-06-24",
+    6.58
+   ],
+   [
+    "2026-07-01",
+    6.66
+   ],
+   [
+    "2026-07-08",
+    6.58
+   ],
+   [
+    "2026-07-15",
+    6.57
+   ],
+   [
+    "2026-07-22",
+    6.65
+   ],
+   [
+    "2026-07-29",
+    6.74
+   ],
+   [
+    "2026-08-05",
+    6.84
+   ],
+   [
+    "2026-08-12",
+    6.78
+   ],
+   [
+    "2026-08-19",
+    6.71
+   ],
+   [
+    "2026-08-26",
+    6.83
+   ],
+   [
+    "2026-09-02",
+    6.87
+   ],
+   [
+    "2026-09-03",
+    6.88
+   ],
+   [
+    "2026-09-04",
+    6.89
+   ],
+   [
+    "2026-09-08",
+    6.89
+   ],
+   [
+    "2026-09-09",
+    6.97
+   ]
+  ],
+  "events": [
+   {
+    "d": "2025-11-02",
+    "v": 6.26,
+    "dash": true,
+    "lines": [
+     "FED CUTS 3\u00d7",
+     "SEP\u2013DEC '25"
+    ],
+    "tx": "2025-11-02",
+    "ty": 6.02,
+    "de": 6.1
+   },
+   {
+    "d": "2025-09-23",
+    "v": 6.33,
+    "dot": true
+   },
+   {
+    "d": "2025-12-12",
+    "v": 6.29,
+    "dot": true
+   },
+   {
+    "d": "2026-02-24",
+    "v": 5.97,
+    "dash": false,
+    "lines": [
+     "FEB 24: BELOW 6%",
+     "FIRST TIME IN 3 YRS"
+    ],
+    "tx": "2026-02-27",
+    "ty": 5.845
+   },
+   {
+    "d": "2026-03-18",
+    "v": 6.3,
+    "dash": false,
+    "lines": [
+     "MAR 18: FED PAUSES",
+     "IRAN CONFLICT + INFLATION"
+    ],
+    "tx": "2026-05-08",
+    "ty": 6.03
+   },
+   {
+    "d": "2026-06-17",
+    "v": 6.63,
+    "dash": true,
+    "lines": [
+     "JUN 17: NEW FED CHAIR",
+     "\u201cNO CUTS IN 2026\u201d"
+    ],
+    "tx": "2026-07-08",
+    "ty": 6.295,
+    "de": 6.48
+   },
+   {
+    "d": "2026-07-29",
+    "v": 6.68,
+    "dash": true,
+    "lines": [
+     "JUL 29: 3 FED",
+     "VOTES TO RAISE"
+    ],
+    "anchor": "end",
+    "tx": "2026-09-03",
+    "ty": 6.42,
+    "de": 6.49
+   }
+  ],
+  "source": "Source: Mortgage News Daily 30-yr fixed index \u00b7 Sep '25 \u2013 today. Full sources on the last slide.",
+  "stats": [
+   {
+    "k": "12-MO LOW",
+    "v": "5.97%",
+    "s": "FEB 24",
+    "rd": false
+   },
+   {
+    "k": "12-MO HIGH",
+    "v": "6.97%",
+    "s": "NOW",
+    "rd": true
+   },
+   {
+    "k": "12-MO CHANGE",
+    "v": "+0.48",
+    "s": "POINTS",
+    "rd": false
+   }
+  ]
+ },
+ "oil": {
+  "price": "$96.67",
+  "narrative": "The Iran conflict and OPEC supply cuts are keeping oil above <b>$90</b>. Pricey oil makes everything cost more \u2014 and that keeps rates up. <b>Oil down = rates breathe. Oil up = rates climb.</b>",
+  "chain": [
+   "OIL $90+",
+   "PRICES RISE",
+   "FED STAYS TOUGH",
+   "RATES UP"
+  ]
+ },
+ "fed": {
+  "rate": "3.50\u20133.75%",
+  "narrative": "<b>60% chance they RAISE it Sep 16</b> \u2014 and Friday\u2019s inflation report is the tiebreaker.",
+  "meetings": [
+   {
+    "label": "Sep 16, 2026",
+    "hike": 60,
+    "hold": 40,
+    "cut": 0
+   }
+  ],
+  "note": "CME FedWatch \u2014 traders betting real money. As of 9/9.",
+  "path": [
+   {
+    "k": "DEC 9 \u201925",
+    "v": "Last cut",
+    "s": "steady since"
+   },
+   {
+    "k": "JUL 29",
+    "v": "3 votes to raise",
+    "s": "the turn"
+   },
+   {
+    "k": "SEP 16",
+    "v": "Next decision",
+    "s": "60% say raise"
+   }
+  ]
+ },
+ "watch": [
+  {
+   "m": "SEP",
+   "d": "11",
+   "label": "CPI",
+   "desc": "Inflation report \u2014 the Fed\u2019s tiebreaker",
+   "today": true
+  },
+  {
+   "m": "SEP",
+   "d": "16",
+   "label": "FED",
+   "desc": "Rate decision \u2014 60% say raise"
+  },
+  {
+   "m": "OCT",
+   "d": "2",
+   "label": "JOBS",
+   "desc": "September jobs report"
+  },
+  {
+   "m": "OCT",
+   "d": "28",
+   "label": "FED",
+   "desc": "Rate decision, round two"
+  },
+  {
+   "m": "DEC",
+   "d": "9",
+   "label": "FED",
+   "desc": "Last decision of 2026"
+  }
+ ]
+}
