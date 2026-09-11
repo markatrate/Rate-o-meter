@@ -49,6 +49,109 @@ def get_wti():
     _, v = get_fred_latest("DCOILWTICO")
     return v, "FRED (may lag 1-2 days)"
 
+
+# ============================================================
+# LIVE LOGIC ENGINE
+# Rewrites the needle, verdicts, and headline sentences from
+# rules applied ONLY to numbers this run verified. If a number
+# wasn't fetched, the related sentence is left as-is.
+# ============================================================
+MONTHS = {"JAN":1,"FEB":2,"MAR":3,"APR":4,"MAY":5,"JUN":6,"JUL":7,"AUG":8,"SEP":9,"OCT":10,"NOV":11,"DEC":12}
+EVENT_NAMES = {"CPI":"the inflation report","FED":"the Fed decision","JOBS":"the jobs report"}
+
+def next_events(data, now):
+    """Upcoming items from the calendar, soonest first, with real dates."""
+    out = []
+    for w in data.get("watch", []):
+        mth = MONTHS.get(w.get("m","")); day = int(w.get("d","1"))
+        if not mth: continue
+        yr = now.year + (1 if mth < now.month - 6 else 0)
+        dt = datetime.date(yr, mth, day)
+        if dt >= now.date():
+            out.append((dt, w.get("label",""), w))
+    out.sort()
+    return out
+
+def dayword(dt, now):
+    delta = (dt - now.date()).days
+    if delta == 0: return "today"
+    if delta == 1: return "tomorrow"
+    if delta <= 6: return dt.strftime("%A")
+    return dt.strftime("%b %-d")
+
+def derive_logic(data, now, got):
+    """got = dict of verified values this run: rate, prev, hike, wti"""
+    tf = data.get("timeframes")
+    if not tf: return
+    ev = next_events(data, now)
+    nxt = ev[0] if ev else None
+    fed_ev = next((e for e in ev if e[1] == "FED"), None)
+    rep_ev = next((e for e in ev if e[1] in ("CPI","JOBS")), None)
+
+    rate, prev, hike, wti = got.get("rate"), got.get("prev"), got.get("hike"), got.get("wti")
+    series_vals = [v for _, v in data.get("rateChart",{}).get("series",[])]
+    hi = max(series_vals) if series_vals else None
+    lo = min(series_vals) if series_vals else None
+
+    # ---------- needle math ----------
+    if hike is not None:
+        bias = (hike - 50) * 1.4
+        trend = 0
+        if rate is not None and hi is not None and lo is not None:
+            if rate >= hi - 0.02: trend = 18
+            elif rate <= lo + 0.02: trend = -18
+            elif prev is not None: trend = max(-12, min(12, (rate - prev) * 150))
+        for key, mult in (("today",1.0), ("week",0.9), ("month",0.75)):
+            n = max(-85, min(85, round(bias * mult + trend)))
+            v = "HIGHER" if n > 15 else ("LOWER" if n < -15 else "NO MOVEMENT")
+            tf[key]["needle"] = n
+            tf[key]["verdict"] = v
+            tf[key]["hi"] = (v == "HIGHER")
+
+    # ---------- today ----------
+    if rate is not None:
+        rs = f"{rate:.2f}%"
+        at_high = hi is not None and rate >= hi - 0.001
+        move = "" if prev is None else (f" \u2014 up {rate-prev:.2f} today" if rate > prev + 0.004 else (f" \u2014 down {prev-rate:.2f} today" if rate < prev - 0.004 else " \u2014 flat today"))
+        if at_high:
+            tf["today"]["line"] = f"Rates are at a 12-month high \u2014 {rs}" + (f" \u2014 with {EVENT_NAMES.get(nxt[1],'a big report')} {dayword(nxt[0], now)}." if nxt else ".")
+        elif prev is not None and rate > prev + 0.004:
+            tf["today"]["line"] = f"Rates ticked up to {rs}" + (f" ahead of {EVENT_NAMES.get(nxt[1],'the next report')} {dayword(nxt[0], now)}." if nxt else ".")
+        elif prev is not None and rate < prev - 0.004:
+            tf["today"]["line"] = f"A little relief: rates eased to {rs}" + (f" ahead of {EVENT_NAMES.get(nxt[1],'the next report')} {dayword(nxt[0], now)}." if nxt else ".")
+        else:
+            tf["today"]["line"] = f"Rates are holding at {rs}" + (f" \u2014 all eyes on {EVENT_NAMES.get(nxt[1],'the next report')} {dayword(nxt[0], now)}." if nxt else ".")
+        flips = [f"<b>{rs}</b>{move} (Mortgage News Daily)."]
+        if hike is not None and fed_ev is not None:
+            flips.append(f"<b>{hike}% odds</b> the Fed raises rates {fed_ev[0].strftime('%b %-d')}.")
+        if wti is not None:
+            flips.append(f"<b>Oil at ${wti:.0f}</b> \u2014 pricey oil feeds inflation.")
+        if rep_ev is not None:
+            flips.append(f"<b>{dayword(rep_ev[0], now).capitalize()}:</b> {EVENT_NAMES.get(rep_ev[1])} decides the Fed.")
+        tf["today"]["flips"] = flips[:3]
+
+    # ---------- week ----------
+    if nxt is not None and (nxt[0] - now.date()).days <= 6:
+        tf["week"]["line"] = f"{EVENT_NAMES.get(nxt[1],'The next report').capitalize()} {dayword(nxt[0], now)} decides this week."
+    elif nxt is not None:
+        tf["week"]["line"] = f"Quiet week \u2014 the next big number is {EVENT_NAMES.get(nxt[1])} on {nxt[0].strftime('%b %-d')}."
+
+    # ---------- month ----------
+    if fed_ev is not None and hike is not None:
+        lean = "raise" if hike >= 55 else ("hold" if hike <= 45 else "toss-up")
+        tf["month"]["line"] = f"The Fed meets {fed_ev[0].strftime('%b %-d')}. The market says {hike}% they raise."
+        tf["month"]["flips"] = [
+            f"<b>{fed_ev[0].strftime('%b %-d')}:</b> the decision \u2014 leaning {lean}.",
+            (f"<b>{EVENT_NAMES.get(rep_ev[1]).capitalize()} {dayword(rep_ev[0], now)}</b> could change their mind." if rep_ev else "<b>Incoming data</b> could change their mind."),
+            "<b>Oil under $85</b> \u2192 the fear fades."
+        ]
+
+    # ---------- oil chain bucket ----------
+    if wti is not None and "oil" in data:
+        bucket = int(wti // 5) * 5
+        data["oil"]["chain"] = [f"OIL ${bucket}+","PRICES RISE","FED STAYS TOUGH","RATES UP"]
+
+
 def get_fed_odds():
     """CME FedWatch raise probability for the next meeting, via headless browser.
     Requires playwright (installed by the workflow). Returns int percent."""
@@ -92,6 +195,7 @@ def apply_fed_odds(data, hike):
 
 def main():
     data = json.load(open(JSON_PATH))
+    got = {}
     now = datetime.datetime.now(datetime.timezone.utc).astimezone(
         datetime.timezone(datetime.timedelta(hours=-4)))  # ET-ish
     stamp = now.strftime("%a, %b %-d, %Y \u00b7 %-I %p ET")
@@ -108,6 +212,8 @@ def main():
             rc["series"][-1][1] = rate
         else:
             rc["series"].append([today, rate])
+        got["rate"] = rate
+        if len(rc["series"]) >= 2: got["prev"] = rc["series"][-2][1]
         rc["latest"] = f"{rate_s}%"
         rc["latestLabel"] = f"TODAY: {rate_s}%"
         rc["asOf"] = now.strftime("%b %-d, %-I %p ET")
@@ -135,6 +241,7 @@ def main():
     try:
         hike = get_fed_odds()
         apply_fed_odds(data, hike)
+        got["hike"] = hike
         if data.get("fed"): data["fed"]["note"] = f"CME FedWatch \u2014 traders betting real money. As of {now.strftime('%-m/%-d')}.".encode().decode("unicode_escape")
         changed = True
         print(f"FedWatch raise odds: {hike}%")
@@ -145,6 +252,7 @@ def main():
     try:
         wti, src = get_wti()
         data.setdefault("oil", {})["price"] = f"${wti:.2f}"
+        got["wti"] = wti
         changed = True
         print(f"WTI: ${wti:.2f} via {src}")
     except Exception as e:
@@ -161,6 +269,12 @@ def main():
         print(f"10-yr Treasury: {y10:.2f}% ({d10})")
     except Exception as e:
         print(f"FRED DGS10 skipped ({e})", file=sys.stderr)
+
+    try:
+        derive_logic(data, now, got)
+        print(f"logic engine: verdicts derived from {sorted(got)}")
+    except Exception as e:
+        print(f"logic engine skipped ({e})", file=sys.stderr)
 
     if changed:
         data["dataAsOf"] = stamp

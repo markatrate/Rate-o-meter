@@ -1,11 +1,11 @@
 {
- "dataAsOf": "Fri, Sep 11, 2026 \u00b7 6 AM ET",
+ "dataAsOf": "Wed, Sep 9, 2026 \u00b7 evening",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
    "k": "TODAY\u2019S MORTGAGE RATE",
    "sub": "30-yr fixed \u00b7 Mortgage News Daily \u00b7 12-mo high",
-   "v": "7.07",
+   "v": "6.97",
    "unit": "%",
    "hot": false
   },
@@ -32,9 +32,9 @@
   }
  ],
  "rateChart": {
-  "latest": "7.07%",
-  "latestLabel": "TODAY: 7.07%",
-  "asOf": "Sep 11, 6 AM ET",
+  "latest": "6.97%",
+  "latestLabel": "TODAY: 6.97%",
+  "asOf": "Sep 9, 3 PM ET",
   "series": [
    [
     "2025-09-03",
@@ -263,10 +263,6 @@
    [
     "2026-09-09",
     6.97
-   ],
-   [
-    "2026-09-11",
-    7.07
    ]
   ],
   "events": [
@@ -344,19 +340,19 @@
   "stats": [
    {
     "k": "12-MO LOW",
-    "v": "5.98%",
+    "v": "5.97%",
     "s": "FEB 24",
     "rd": false
    },
    {
     "k": "12-MO HIGH",
-    "v": "7.07%",
+    "v": "6.97%",
     "s": "NOW",
     "rd": true
    },
    {
     "k": "12-MO CHANGE",
-    "v": "+0.58",
+    "v": "+0.48",
     "s": "POINTS",
     "rd": false
    }
@@ -434,5 +430,51 @@
    "label": "FED",
    "desc": "Last decision of 2026"
   }
- ]
+ ],
+ "timeframes": {
+  "today": {
+   "needle": 68,
+   "verdict": "HIGHER",
+   "hi": true,
+   "line": "Rates just hit a new 12-month high \u2014 6.97% \u2014 as oil races toward $100.",
+   "flips": [
+    "<b>6.97%</b> \u2014 up 0.08 today (Mortgage News Daily).",
+    "<b>60% odds</b> the Fed raises rates Sep 16.",
+    "<b>Friday:</b> the inflation report decides the Fed."
+   ]
+  },
+  "week": {
+   "needle": 55,
+   "verdict": "HIGHER",
+   "hi": true,
+   "line": "Friday\u2019s inflation report decides this week.",
+   "flips": [
+    "<b>Prices cool</b> \u2192 rates come down.",
+    "<b>Prices hot</b> \u2192 rates push toward 7%.",
+    "<b>Oil near $100</b> makes cooling harder."
+   ]
+  },
+  "month": {
+   "needle": 48,
+   "verdict": "HIGHER",
+   "hi": true,
+   "line": "The Fed meets Sep 16. The market says 60% they raise.",
+   "flips": [
+    "<b>Sep 16:</b> the decision.",
+    "<b>Cool prices Friday</b> could change their mind.",
+    "<b>Oil under $85</b> \u2192 the fear fades."
+   ]
+  },
+  "year": {
+   "needle": 8,
+   "verdict": "NO MOVEMENT",
+   "hi": false,
+   "line": "Rates stay in the 6\u2019s for a while. No crash, no spike.",
+   "flips": [
+    "<b>Prices near 2%</b> \u2192 the Fed cuts, rates follow.",
+    "<b>Oil stays high</b> \u2192 rates stay stuck.",
+    "<b>Dec 9:</b> the Fed\u2019s last meeting of 2026."
+   ]
+  }
+ }
 }
