@@ -1,5 +1,5 @@
 {
- "dataAsOf": "Wed, Sep 16, 2026 \u00b7 6 PM ET",
+ "dataAsOf": "Thu, Sep 17, 2026 \u00b7 8 AM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
@@ -34,7 +34,7 @@
  "rateChart": {
   "latest": "7.24%",
   "latestLabel": "TODAY: 7.24%",
-  "asOf": "Sep 16, 6 PM ET",
+  "asOf": "Sep 17, 8 AM ET",
   "series": [
    [
     "2025-09-03",
@@ -279,6 +279,10 @@
    [
     "2026-09-16",
     7.24
+   ],
+   [
+    "2026-09-17",
+    7.24
    ]
   ],
   "events": [
@@ -452,9 +456,9 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "Rates are at a 12-month high \u2014 7.24% \u2014 with the Fed decision today.",
+   "line": "Rates are at a 12-month high \u2014 7.24% \u2014 with the jobs report Oct 2.",
    "flips": [
-    "<b>7.24%</b> \u2014 up 0.02 today (Mortgage News Daily).",
+    "<b>7.24%</b> \u2014 flat today (Mortgage News Daily).",
     "<b>Oct 2:</b> the jobs report decides the Fed."
    ]
   },
@@ -462,7 +466,7 @@
    "needle": 55,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "The fed decision today decides this week.",
+   "line": "Quiet week \u2014 the next big number is the jobs report on Oct 2.",
    "flips": [
     "<b>Prices cool</b> \u2192 rates come down.",
     "<b>Prices hot</b> \u2192 rates push toward 7%.",
