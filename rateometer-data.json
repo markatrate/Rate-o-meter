@@ -1,5 +1,5 @@
 {
- "dataAsOf": "Mon, Sep 21, 2026 \u00b7 6 PM ET",
+ "dataAsOf": "Tue, Sep 22, 2026 \u00b7 8 AM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
@@ -34,7 +34,7 @@
  "rateChart": {
   "latest": "7.19%",
   "latestLabel": "TODAY: 7.19%",
-  "asOf": "Sep 21, 6 PM ET",
+  "asOf": "Sep 22, 8 AM ET",
   "series": [
    [
     "2025-09-03",
@@ -291,6 +291,10 @@
    [
     "2026-09-21",
     7.19
+   ],
+   [
+    "2026-09-22",
+    7.19
    ]
   ],
   "events": [
@@ -464,9 +468,9 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "A little relief: rates eased to 7.19% ahead of the jobs report Oct 2.",
+   "line": "Rates are holding at 7.19% \u2014 all eyes on the jobs report Oct 2.",
    "flips": [
-    "<b>7.19%</b> \u2014 down 0.01 today (Mortgage News Daily).",
+    "<b>7.19%</b> \u2014 flat today (Mortgage News Daily).",
     "<b>Oct 2:</b> the jobs report decides the Fed."
    ]
   },
