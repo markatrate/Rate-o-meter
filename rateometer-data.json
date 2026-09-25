@@ -1,5 +1,5 @@
 {
- "dataAsOf": "Thu, Sep 24, 2026 \u00b7 6 PM ET",
+ "dataAsOf": "Fri, Sep 25, 2026 \u00b7 8 AM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
@@ -34,7 +34,7 @@
  "rateChart": {
   "latest": "7.45%",
   "latestLabel": "TODAY: 7.45%",
-  "asOf": "Sep 24, 6 PM ET",
+  "asOf": "Sep 25, 8 AM ET",
   "series": [
    [
     "2025-09-03",
@@ -303,6 +303,10 @@
    [
     "2026-09-24",
     7.45
+   ],
+   [
+    "2026-09-25",
+    7.45
    ]
   ],
   "events": [
@@ -478,7 +482,7 @@
    "hi": true,
    "line": "Rates are at a 12-month high \u2014 7.45% \u2014 with the jobs report Oct 2.",
    "flips": [
-    "<b>7.45%</b> \u2014 up 0.19 today (Mortgage News Daily).",
+    "<b>7.45%</b> \u2014 flat today (Mortgage News Daily).",
     "<b>Oct 2:</b> the jobs report decides the Fed."
    ]
   },
