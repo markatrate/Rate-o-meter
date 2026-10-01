@@ -1,5 +1,5 @@
 {
- "dataAsOf": "Wed, Sep 30, 2026 \u00b7 6 PM ET",
+ "dataAsOf": "Thu, Oct 1, 2026 \u00b7 8 AM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
@@ -34,7 +34,7 @@
  "rateChart": {
   "latest": "7.60%",
   "latestLabel": "TODAY: 7.60%",
-  "asOf": "Sep 30, 6 PM ET",
+  "asOf": "Oct 1, 8 AM ET",
   "series": [
    [
     "2025-09-03",
@@ -319,6 +319,10 @@
    [
     "2026-09-30",
     7.6
+   ],
+   [
+    "2026-10-01",
+    7.6
    ]
   ],
   "events": [
@@ -492,17 +496,17 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "Rates are at a 12-month high \u2014 7.60% \u2014 with the jobs report Friday.",
+   "line": "Rates are at a 12-month high \u2014 7.60% \u2014 with the jobs report tomorrow.",
    "flips": [
-    "<b>7.60%</b> \u2014 up 0.02 today (Mortgage News Daily).",
-    "<b>Friday:</b> the jobs report decides the Fed."
+    "<b>7.60%</b> \u2014 flat today (Mortgage News Daily).",
+    "<b>Tomorrow:</b> the jobs report decides the Fed."
    ]
   },
   "week": {
    "needle": 55,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "The jobs report Friday decides this week.",
+   "line": "The jobs report tomorrow decides this week.",
    "flips": [
     "<b>Prices cool</b> \u2192 rates come down.",
     "<b>Prices hot</b> \u2192 rates push toward 7%.",
