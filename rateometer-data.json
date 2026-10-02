@@ -1,5 +1,5 @@
 {
- "dataAsOf": "Fri, Oct 2, 2026 \u00b7 8 AM ET",
+ "dataAsOf": "Fri, Oct 2, 2026 \u00b7 10 AM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
@@ -34,7 +34,7 @@
  "rateChart": {
   "latest": "7.54%",
   "latestLabel": "TODAY: 7.54%",
-  "asOf": "Oct 2, 8 AM ET",
+  "asOf": "Oct 2, 10 AM ET",
   "series": [
    [
     "2025-09-03",
