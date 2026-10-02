@@ -1,5 +1,5 @@
 {
- "dataAsOf": "Thu, Oct 1, 2026 \u00b7 6 PM ET",
+ "dataAsOf": "Fri, Oct 2, 2026 \u00b7 8 AM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
@@ -34,7 +34,7 @@
  "rateChart": {
   "latest": "7.54%",
   "latestLabel": "TODAY: 7.54%",
-  "asOf": "Oct 1, 6 PM ET",
+  "asOf": "Oct 2, 8 AM ET",
   "series": [
    [
     "2025-09-03",
@@ -323,6 +323,10 @@
    [
     "2026-10-01",
     7.54
+   ],
+   [
+    "2026-10-02",
+    7.54
    ]
   ],
   "events": [
@@ -496,17 +500,17 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "A little relief: rates eased to 7.54% ahead of the jobs report tomorrow.",
+   "line": "Rates are holding at 7.54% \u2014 all eyes on the jobs report today.",
    "flips": [
-    "<b>7.54%</b> \u2014 down 0.06 today (Mortgage News Daily).",
-    "<b>Tomorrow:</b> the jobs report decides the Fed."
+    "<b>7.54%</b> \u2014 flat today (Mortgage News Daily).",
+    "<b>Today:</b> the jobs report decides the Fed."
    ]
   },
   "week": {
    "needle": 55,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "The jobs report tomorrow decides this week.",
+   "line": "The jobs report today decides this week.",
    "flips": [
     "<b>Prices cool</b> \u2192 rates come down.",
     "<b>Prices hot</b> \u2192 rates push toward 7%.",
