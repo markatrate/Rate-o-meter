@@ -1,11 +1,11 @@
 {
- "dataAsOf": "Fri, Oct 2, 2026 \u00b7 12 PM ET",
+ "dataAsOf": "Fri, Oct 2, 2026 \u00b7 2 PM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
    "k": "TODAY\u2019S MORTGAGE RATE",
    "sub": "30-yr fixed \u00b7 Mortgage News Daily",
-   "v": "7.54",
+   "v": "7.49",
    "unit": "%",
    "hot": false
   },
@@ -32,9 +32,9 @@
   }
  ],
  "rateChart": {
-  "latest": "7.54%",
-  "latestLabel": "TODAY: 7.54%",
-  "asOf": "Oct 2, 12 PM ET",
+  "latest": "7.49%",
+  "latestLabel": "TODAY: 7.49%",
+  "asOf": "Oct 2, 2 PM ET",
   "series": [
    [
     "2025-09-03",
@@ -326,7 +326,7 @@
    ],
    [
     "2026-10-02",
-    7.54
+    7.49
    ]
   ],
   "events": [
@@ -416,7 +416,7 @@
    },
    {
     "k": "12-MO CHANGE",
-    "v": "+1.05",
+    "v": "+1.00",
     "s": "POINTS",
     "rd": false
    }
@@ -500,9 +500,9 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "Rates are holding at 7.54% \u2014 all eyes on the jobs report today.",
+   "line": "A little relief: rates eased to 7.49% ahead of the jobs report today.",
    "flips": [
-    "<b>7.54%</b> \u2014 flat today (Mortgage News Daily).",
+    "<b>7.49%</b> \u2014 down 0.05 today (Mortgage News Daily).",
     "<b>Today:</b> the jobs report decides the Fed."
    ]
   },
