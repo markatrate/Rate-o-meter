@@ -1,11 +1,11 @@
 {
- "dataAsOf": "Wed, Oct 7, 2026 \u00b7 10 AM ET",
+ "dataAsOf": "Wed, Oct 7, 2026 \u00b7 12 PM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
    "k": "TODAY\u2019S MORTGAGE RATE",
-   "sub": "30-yr fixed \u00b7 Mortgage News Daily",
-   "v": "7.56",
+   "sub": "30-yr fixed \u00b7 Mortgage News Daily \u00b7 12-mo high",
+   "v": "7.63",
    "unit": "%",
    "hot": false
   },
@@ -32,9 +32,9 @@
   }
  ],
  "rateChart": {
-  "latest": "7.56%",
-  "latestLabel": "TODAY: 7.56%",
-  "asOf": "Oct 7, 10 AM ET",
+  "latest": "7.63%",
+  "latestLabel": "TODAY: 7.63%",
+  "asOf": "Oct 7, 12 PM ET",
   "series": [
    [
     "2025-09-03",
@@ -338,7 +338,7 @@
    ],
    [
     "2026-10-07",
-    7.56
+    7.63
    ]
   ],
   "events": [
@@ -422,13 +422,13 @@
    },
    {
     "k": "12-MO HIGH",
-    "v": "7.61%",
+    "v": "7.63%",
     "s": "NOW",
     "rd": true
    },
    {
     "k": "12-MO CHANGE",
-    "v": "+1.07",
+    "v": "+1.14",
     "s": "POINTS",
     "rd": false
    }
@@ -512,9 +512,9 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "Rates are holding at 7.56% \u2014 all eyes on the Fed decision Oct 28.",
+   "line": "Rates are at a 12-month high \u2014 7.63% \u2014 with the Fed decision Oct 28.",
    "flips": [
-    "<b>7.56%</b> \u2014 flat today (Mortgage News Daily)."
+    "<b>7.63%</b> \u2014 up 0.07 today (Mortgage News Daily)."
    ]
   },
   "week": {
