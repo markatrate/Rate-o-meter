@@ -1,11 +1,11 @@
 {
- "dataAsOf": "Thu, Oct 22, 2026 \u00b7 12 PM ET",
+ "dataAsOf": "Thu, Oct 22, 2026 \u00b7 5 PM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
    "k": "TODAY\u2019S MORTGAGE RATE",
    "sub": "30-yr fixed \u00b7 Mortgage News Daily",
-   "v": "7.36",
+   "v": "7.30",
    "unit": "%",
    "hot": false
   },
@@ -32,9 +32,9 @@
   }
  ],
  "rateChart": {
-  "latest": "7.36%",
-  "latestLabel": "TODAY: 7.36%",
-  "asOf": "Oct 22, 12 PM ET",
+  "latest": "7.30%",
+  "latestLabel": "TODAY: 7.30%",
+  "asOf": "Oct 22, 5 PM ET",
   "series": [
    [
     "2025-09-03",
@@ -382,7 +382,7 @@
    ],
    [
     "2026-10-22",
-    7.36
+    7.3
    ]
   ],
   "events": [
@@ -472,7 +472,7 @@
    },
    {
     "k": "12-MO CHANGE",
-    "v": "+0.87",
+    "v": "+0.81",
     "s": "POINTS",
     "rd": false
    }
@@ -556,9 +556,9 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "A little relief: rates eased to 7.36% ahead of the Fed decision Wednesday.",
+   "line": "A little relief: rates eased to 7.30% ahead of the Fed decision Wednesday.",
    "flips": [
-    "<b>7.36%</b> \u2014 down 0.04 today (Mortgage News Daily)."
+    "<b>7.30%</b> \u2014 down 0.10 today (Mortgage News Daily)."
    ]
   },
   "week": {
