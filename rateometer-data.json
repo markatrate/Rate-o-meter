@@ -1,5 +1,5 @@
 {
- "dataAsOf": "Mon, Oct 26, 2026 \u00b7 7 PM ET",
+ "dataAsOf": "Tue, Oct 27, 2026 \u00b7 1 PM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
@@ -34,7 +34,7 @@
  "rateChart": {
   "latest": "7.33%",
   "latestLabel": "TODAY: 7.33%",
-  "asOf": "Oct 26, 7 PM ET",
+  "asOf": "Oct 27, 1 PM ET",
   "series": [
    [
     "2025-09-03",
@@ -391,6 +391,10 @@
    [
     "2026-10-26",
     7.33
+   ],
+   [
+    "2026-10-27",
+    7.33
    ]
   ],
   "events": [
@@ -564,7 +568,7 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "Rates are holding at 7.33% \u2014 all eyes on the Fed decision Wednesday.",
+   "line": "Rates are holding at 7.33% \u2014 all eyes on the Fed decision tomorrow.",
    "flips": [
     "<b>7.33%</b> \u2014 flat today (Mortgage News Daily)."
    ]
@@ -573,7 +577,7 @@
    "needle": 55,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "The fed decision Wednesday decides this week.",
+   "line": "The fed decision tomorrow decides this week.",
    "flips": [
     "<b>Prices cool</b> \u2192 rates come down.",
     "<b>Prices hot</b> \u2192 rates push toward 7%.",
