@@ -1,11 +1,11 @@
 {
- "dataAsOf": "Tue, Oct 27, 2026 \u00b7 9 PM ET",
+ "dataAsOf": "Wed, Oct 28, 2026 \u00b7 2 PM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
    "k": "TODAY\u2019S MORTGAGE RATE",
    "sub": "30-yr fixed \u00b7 Mortgage News Daily",
-   "v": "7.33",
+   "v": "7.35",
    "unit": "%",
    "hot": false
   },
@@ -32,9 +32,9 @@
   }
  ],
  "rateChart": {
-  "latest": "7.33%",
-  "latestLabel": "TODAY: 7.33%",
-  "asOf": "Oct 27, 9 PM ET",
+  "latest": "7.35%",
+  "latestLabel": "TODAY: 7.35%",
+  "asOf": "Oct 28, 2 PM ET",
   "series": [
    [
     "2025-09-03",
@@ -395,6 +395,10 @@
    [
     "2026-10-27",
     7.33
+   ],
+   [
+    "2026-10-28",
+    7.35
    ]
   ],
   "events": [
@@ -484,7 +488,7 @@
    },
    {
     "k": "12-MO CHANGE",
-    "v": "+0.84",
+    "v": "+0.86",
     "s": "POINTS",
     "rd": false
    }
@@ -568,16 +572,16 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "Rates are holding at 7.33% \u2014 all eyes on the Fed decision tomorrow.",
+   "line": "Rates ticked up to 7.35% ahead of the Fed decision today.",
    "flips": [
-    "<b>7.33%</b> \u2014 flat today (Mortgage News Daily)."
+    "<b>7.35%</b> \u2014 up 0.02 today (Mortgage News Daily)."
    ]
   },
   "week": {
    "needle": 55,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "The fed decision tomorrow decides this week.",
+   "line": "The fed decision today decides this week.",
    "flips": [
     "<b>Prices cool</b> \u2192 rates come down.",
     "<b>Prices hot</b> \u2192 rates push toward 7%.",
