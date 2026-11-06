@@ -1,5 +1,5 @@
 {
- "dataAsOf": "Thu, Nov 5, 2026 \u00b7 8 PM ET",
+ "dataAsOf": "Fri, Nov 6, 2026 \u00b7 3 PM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
@@ -34,7 +34,7 @@
  "rateChart": {
   "latest": "7.17%",
   "latestLabel": "TODAY: 7.17%",
-  "asOf": "Nov 5, 8 PM ET",
+  "asOf": "Nov 6, 3 PM ET",
   "series": [
    [
     "2025-09-03",
@@ -423,6 +423,10 @@
    [
     "2026-11-05",
     7.17
+   ],
+   [
+    "2026-11-06",
+    7.17
    ]
   ],
   "events": [
@@ -596,9 +600,9 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "A little relief: rates eased to 7.17% ahead of the Fed decision Dec 9.",
+   "line": "Rates are holding at 7.17% \u2014 all eyes on the Fed decision Dec 9.",
    "flips": [
-    "<b>7.17%</b> \u2014 down 0.05 today (Mortgage News Daily)."
+    "<b>7.17%</b> \u2014 flat today (Mortgage News Daily)."
    ]
   },
   "week": {
