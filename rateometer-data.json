@@ -1,11 +1,11 @@
 {
- "dataAsOf": "Mon, Nov 9, 2026 \u00b7 6 PM ET",
+ "dataAsOf": "Tue, Nov 10, 2026 \u00b7 3 PM ET",
  "numTag": "LIVE \u00b7 AUTO-UPDATED",
  "bigNums": [
   {
    "k": "TODAY\u2019S MORTGAGE RATE",
    "sub": "30-yr fixed \u00b7 Mortgage News Daily",
-   "v": "7.18",
+   "v": "7.30",
    "unit": "%",
    "hot": false
   },
@@ -32,9 +32,9 @@
   }
  ],
  "rateChart": {
-  "latest": "7.18%",
-  "latestLabel": "TODAY: 7.18%",
-  "asOf": "Nov 9, 6 PM ET",
+  "latest": "7.30%",
+  "latestLabel": "TODAY: 7.30%",
+  "asOf": "Nov 10, 3 PM ET",
   "series": [
    [
     "2025-09-03",
@@ -431,6 +431,10 @@
    [
     "2026-11-09",
     7.18
+   ],
+   [
+    "2026-11-10",
+    7.3
    ]
   ],
   "events": [
@@ -520,7 +524,7 @@
    },
    {
     "k": "12-MO CHANGE",
-    "v": "+0.69",
+    "v": "+0.81",
     "s": "POINTS",
     "rd": false
    }
@@ -604,9 +608,9 @@
    "needle": 68,
    "verdict": "HIGHER",
    "hi": true,
-   "line": "Rates ticked up to 7.18% ahead of the Fed decision Dec 9.",
+   "line": "Rates ticked up to 7.30% ahead of the Fed decision Dec 9.",
    "flips": [
-    "<b>7.18%</b> \u2014 up 0.01 today (Mortgage News Daily)."
+    "<b>7.30%</b> \u2014 up 0.12 today (Mortgage News Daily)."
    ]
   },
   "week": {
